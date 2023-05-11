@@ -24,7 +24,7 @@ class SignupPage extends StatelessWidget {
                       Navigator.of(context).pushNamed('/login');
                     },
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color.fromARGB(255, 4, 4, 66),
+                      primary: const Color.fromARGB(255, 4, 4, 66),
                       padding: const EdgeInsets.symmetric(
                           horizontal: 58, vertical: 16),
                       shape: RoundedRectangleBorder(
@@ -55,7 +55,7 @@ class SignupPage extends StatelessWidget {
                       Navigator.of(context).pushNamed('/authentication');
                     },
                     style: OutlinedButton.styleFrom(
-                      side: const BorderSide(width: 2, color: Colors.blue),
+                      side: const BorderSide(width: 2, color: Color.fromARGB(255, 4, 4, 66)),
                       padding: const EdgeInsets.symmetric(
                           horizontal: 50, vertical: 16),
                       shape: RoundedRectangleBorder(
@@ -68,7 +68,7 @@ class SignupPage extends StatelessWidget {
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
                         letterSpacing: 2,
-                        color: Colors.blue,
+                        color: Color.fromARGB(255, 4, 4, 66),
                       ),
                     ),
                   ),

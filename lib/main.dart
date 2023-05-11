@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'hesa',
-      home: const SplashScreen(),
+      home: const SplashScreen(),  
       routes: {
         '/signup': (context) => const SignupPage(),
         '/login': (context) => const LoginPage(),
@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
       },
     );
   }
-}
+}      
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);

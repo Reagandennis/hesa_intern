@@ -7,7 +7,7 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(
-        child: Text('This is the Login page!'),
+        child: Text('This is the Login page0! welcome'),
       ),
     );
   }
