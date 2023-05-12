@@ -15,7 +15,7 @@ class AuthenticationPage extends StatelessWidget {
             padding: const EdgeInsets.all(10.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.end,
-              children: [
+              children: [                 
                 Padding(
                   padding: const EdgeInsets.all(10.0),
                   child: TextFormField(
@@ -24,7 +24,7 @@ class AuthenticationPage extends StatelessWidget {
                       hintText: "Enter your phone number",
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(25),
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Colors.black,
                           width: 2.0,
                         ),
@@ -72,7 +72,7 @@ class AuthenticationPage extends StatelessWidget {
                         hintText: "Enter OTP",
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(25),
-                          borderSide: BorderSide(
+                          borderSide: const BorderSide(
                             color: Colors.black,
                             width: 2.0,
                           ),

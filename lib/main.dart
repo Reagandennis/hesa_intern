@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:hesa/login_page.dart';
 import 'package:hesa/authentication.dart';
 import 'package:hesa/signup_page.dart';
+import 'package:hesa/legal.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,15 +19,16 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'hesa',
-      home: const SplashScreen(),  
+      home: const SplashScreen(),
       routes: {
         '/signup': (context) => const SignupPage(),
         '/login': (context) => const LoginPage(),
         '/authentication': (context) => const AuthenticationPage(),
+        '/legal': (context) => LegalPage(),
       },
     );
   }
-}      
+}
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);

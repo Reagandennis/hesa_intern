@@ -21,7 +21,7 @@ class SignupPage extends StatelessWidget {
                       const EdgeInsets.symmetric(vertical: 16, horizontal: 100),
                   child: ElevatedButton(
                     onPressed: () {
-                      Navigator.of(context).pushNamed('/login');
+                      Navigator.of(context).pushNamed('/legal');
                     },
                     style: ElevatedButton.styleFrom(
                       primary: const Color.fromARGB(255, 4, 4, 66),
@@ -55,7 +55,8 @@ class SignupPage extends StatelessWidget {
                       Navigator.of(context).pushNamed('/authentication');
                     },
                     style: OutlinedButton.styleFrom(
-                      side: const BorderSide(width: 2, color: Color.fromARGB(255, 4, 4, 66)),
+                      side: const BorderSide(
+                          width: 2, color: Color.fromARGB(255, 4, 4, 66)),
                       padding: const EdgeInsets.symmetric(
                           horizontal: 50, vertical: 16),
                       shape: RoundedRectangleBorder(
