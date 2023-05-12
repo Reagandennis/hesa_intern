@@ -28,11 +28,13 @@ class _LegalPageState extends State<LegalPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text(
-                'Terms and Conditions',
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 24.0,
+              const Center(
+                child: Text(
+                  'Terms and Conditions',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 24.0,
+                  ),
                 ),
               ),
               const SizedBox(height: 16.0),
