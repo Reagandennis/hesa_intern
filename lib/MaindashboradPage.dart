@@ -104,28 +104,28 @@ class _MainDashboardPageState extends State<MainDashboardPage> {
             const SizedBox(height: 16),
             ElevatedButton(
               onPressed: () {
-                // TODO: Navigate to add new item page
+                Navigator.of(context).pushNamed('/addProduct');
               },
               child: const Text('Add New Item'),
             ),
             const SizedBox(height: 16),
             ElevatedButton(
               onPressed: () {
-                // TODO: Navigate to display products page
+                Navigator.of(context).pushNamed('/productPage');
               },
               child: const Text('Display Products'),
             ),
             const SizedBox(height: 16),
             ElevatedButton(
               onPressed: () {
-                // TODO: Navigate to show expenses page
+                Navigator.of(context).pushNamed('/expensesPage');
               },
               child: const Text('Show Expenses'),
             ),
             const SizedBox(height: 16),
             ElevatedButton(
               onPressed: () {
-                // TODO: Navigate to generate report page
+                Navigator.of(context).pushNamed('/generateReport');
               },
               child: const Text('Generate Report'),
             ),

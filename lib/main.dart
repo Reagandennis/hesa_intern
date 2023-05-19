@@ -5,8 +5,15 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:hesa/login_page.dart';
 import 'package:hesa/authentication.dart';
+import 'package:hesa/productPage.dart';
+import 'package:hesa/profile.dart';
 import 'package:hesa/signup_page.dart';
 import 'package:hesa/legal.dart';
+
+import 'MaindashboradPage.dart';
+import 'addProduct.dart';
+import 'expensesPage.dart';
+import 'generateReport.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,6 +32,12 @@ class MyApp extends StatelessWidget {
         '/login': (context) => const LoginPage(),
         '/authentication': (context) => const AuthenticationPage(),
         '/legal': (context) => const LegalPage(),
+        '/MaindashboardPage' : (context) => const MainDashboardPage(),
+        '/productPage' : (context) => const DisplayProductsPage(),
+        '/profile' : (context) => const ProfilePage(),
+        '/generateReport' : (context) => SalesGeneratePage(),
+        '/expensesPage' : (context) => ExpensesPage(),
+        '/addProduct' : (context) => const AddProductPage(),
       },
     );
   }
