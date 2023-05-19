@@ -21,6 +21,8 @@ class _LegalPageState extends State<LegalPage> {
     return Material(
       child: Scaffold(
         appBar: AppBar(
+          backgroundColor: Colors.white,
+        
           title: const Text('Legal Page'),
         ),
         body: Padding(

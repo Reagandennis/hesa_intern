@@ -11,9 +11,9 @@ class _HomePageState extends State<HomePage> {
   int _selectedIndex = 0;
 
   final List<Widget> _widgetOptions = <Widget>[
-    OwnerSection(),
-    StoreSection(),
-    StoreKeeperSection(),
+    const OwnerSection(),
+    const StoreSection(),
+    const StoreKeeperSection(),
   ];
 
   void _onItemTapped(int index) {

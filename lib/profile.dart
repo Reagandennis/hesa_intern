@@ -16,10 +16,10 @@ class _ProfilePageState extends State<ProfilePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Profile'),
+        title: const Text('Profile'),
         actions: [
           IconButton(
-            icon: Icon(Icons.edit),
+            icon: const Icon(Icons.edit),
             onPressed: () {
               _showEditProfileDialog();
             },
@@ -34,10 +34,10 @@ class _ProfilePageState extends State<ProfilePage> {
               radius: 75,
               backgroundImage: NetworkImage(_imageUrl),
             ),
-            SizedBox(height: 16),
+            const SizedBox(height: 16),
             Text(
               _name,
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+              style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
           ],
         ),
@@ -53,7 +53,7 @@ class _ProfilePageState extends State<ProfilePage> {
         String? newImageUrl;
 
         return AlertDialog(
-          title: Text('Edit Profile'),
+          title: const Text('Edit Profile'),
           content: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
@@ -66,7 +66,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   newName = value;
                 },
               ),
-              SizedBox(height: 16),
+              const SizedBox(height: 16),
               TextField(
                 decoration: InputDecoration(
                   labelText: 'Image URL',
@@ -83,7 +83,7 @@ class _ProfilePageState extends State<ProfilePage> {
               onPressed: () {
                 Navigator.of(context).pop();
               },
-              child: Text('Cancel'),
+              child: const Text('Cancel'),
             ),
             TextButton(
               onPressed: () {
@@ -101,7 +101,7 @@ class _ProfilePageState extends State<ProfilePage> {
 
                 Navigator.of(context).pop();
               },
-              child: Text('Save'),
+              child: const Text('Save'),
             ),
           ],
         );

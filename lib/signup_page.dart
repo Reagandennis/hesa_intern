@@ -24,7 +24,7 @@ class SignupPage extends StatelessWidget {
                       Navigator.of(context).pushNamed('/legal');
                     },
                     style: ElevatedButton.styleFrom(
-                      primary: const Color.fromARGB(255, 4, 4, 66),
+                      backgroundColor: const Color.fromARGB(255, 4, 4, 66),
                       padding: const EdgeInsets.symmetric(
                           horizontal: 58, vertical: 16),
                       shape: RoundedRectangleBorder(
