@@ -2,13 +2,17 @@
 
 import 'dart:async';
 
+import 'package:faida/view/auth/auth_start_screen.dart';
+import 'package:faida/view/auth/signup_screen.dart';
+import 'package:faida/view/auth/verify_otp_screen.dart';
+import 'package:faida/view/auth/verify_phonenumber_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:hesa/login_page.dart';
-import 'package:hesa/authentication.dart';
-import 'package:hesa/productPage.dart';
-import 'package:hesa/profile.dart';
-import 'package:hesa/signup_page.dart';
-import 'package:hesa/legal.dart';
+import 'package:faida/view/auth/login_screen.dart';
+import 'package:faida/authentication.dart';
+import 'package:faida/productPage.dart';
+import 'package:faida/profile.dart';
+import 'package:faida/legal.dart';
+import 'package:faida/theme/app_theme.dart';
 
 import 'MaindashboradPage.dart';
 import 'addProduct.dart';
@@ -16,20 +20,23 @@ import 'expensesPage.dart';
 import 'generateReport.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const FaidaApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+class FaidaApp extends StatelessWidget {
+  const FaidaApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'hesa',
+      title: 'Faida',
       home: const SplashScreen(),
       routes: {
+        '/authenticate' : (context) => const AuthLaunchPage(),
         '/signup': (context) => const SignupPage(),
+        '/verifyPhoneNumber': (context) => const VerifyPhoneNumberPage(),
         '/login': (context) => const LoginPage(),
+        '/verifyOtp': (context) => const VerifyOtpPage(),
         '/authentication': (context) => const AuthenticationPage(),
         '/legal': (context) => const LegalPage(),
         '/MaindashboardPage' : (context) => const MainDashboardPage(),
@@ -39,6 +46,9 @@ class MyApp extends StatelessWidget {
         '/expensesPage' : (context) => ExpensesPage(),
         '/addProduct' : (context) => const AddProductPage(),
       },
+      debugShowCheckedModeBanner: false,
+      theme: AppTheme.lightTheme,
+      themeMode: ThemeMode.light,
     );
   }
 }
@@ -55,7 +65,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     Timer(const Duration(seconds: 2), () {
-      Navigator.of(context).pushReplacementNamed('/signup');
+      Navigator.of(context).pushReplacementNamed('/authenticate');
     });
   }
 
@@ -63,7 +73,7 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(
-        child: Text('hesa welcomes you!!'),
+        child: Text('Faida welcomes you!!'),
       ),
     );
   }
