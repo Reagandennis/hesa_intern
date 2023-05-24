@@ -18,15 +18,15 @@ class SignupPage extends StatelessWidget {
                 padding: const EdgeInsets.all(1.0),
                 child: Container(
                   margin:
-                      const EdgeInsets.symmetric(vertical: 16, horizontal: 100),
-                  child: ElevatedButton(
+                      const EdgeInsets.symmetric(vertical: 16, horizontal: 50),
+                 child: ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).pushNamed('/MaindashboardPage');
                     },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: const Color.fromARGB(255, 4, 4, 66),
                       padding: const EdgeInsets.symmetric(
-                          horizontal: 58, vertical: 16),
+                          horizontal: 50, vertical: 16),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(25),
                       ),
