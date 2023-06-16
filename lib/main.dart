@@ -37,7 +37,7 @@ class FaidaApp extends StatelessWidget {
         '/verifyPhoneNumber': (context) => const VerifyPhoneNumberPage(),
         '/login': (context) => const LoginPage(),
         '/verifyOtp': (context) => const VerifyOtpPage(),
-        '/authentication': (context) => const AuthenticationPage(),
+        '/authentication': (context) =>  AuthenticationPage(),
         '/legal': (context) => const LegalPage(),
         '/MaindashboardPage' : (context) => const MainDashboardPage(),
         '/productPage' : (context) => const DisplayProductsPage(),
