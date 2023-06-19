@@ -13,7 +13,6 @@ import 'package:faida/productPage.dart';
 import 'package:faida/profile.dart';
 import 'package:faida/legal.dart';
 import 'package:faida/theme/app_theme.dart';
-
 import 'MaindashboradPage.dart';
 import 'addProduct.dart';
 import 'expensesPage.dart';

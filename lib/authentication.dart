@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_declarations, avoid_print, use_build_context_synchronously
+// ignore_for_file: prefer_const_declarations, avoid_print, use_build_context_synchronously, library_private_types_in_public_api, use_key_in_widget_constructors
 
 import 'dart:math';
 
